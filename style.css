@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,700|Poppins:300,400,500,700|Roboto:400,700|Ubuntu:500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  color: #8f8f8f;
+  font-family: 'Popins'; }
+
+.btn {
+  background-color: #82f4d3;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.9375rem; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%; }
+
+.wrapper {
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .wrapper .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 4.0625rem; }
+    .wrapper .nav__logo {
+      max-height: 100%;
+      width: auto; }
+
+.menu {
+  width: 11.1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .menu__item {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    background-color: inherit;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #000; }
+    .menu__item_main {
+      width: 3.4375rem;
+      height: 3.4375rem;
+      background-color: #000;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .menu__item_strip {
+      width: 0.9375rem;
+      height: 0.1875rem;
+      display: inline-block;
+      background-color: #fff;
+      margin: 0.125rem 0; }
+
+.introduction {
+  height: 100%;
+  position: relative; }
+  .introduction__title {
+    font-size: 9.375rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #202123;
+    margin-bottom: 1rem; }
+  .introduction__btn {
+    font-size: 1.5625rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 18.125rem;
+    height: 3.75rem;
+    margin-left: 9%;
+    position: relative;
+    z-index: 15; }
+    .introduction__btn:after {
+      content: '';
+      background-color: initial;
+      border: 2px solid #82f4d3;
+      position: absolute;
+      width: 18.125rem;
+      height: 3.75rem;
+      z-index: 5;
+      left: -5%;
+      bottom: -23%; }
+  .introduction__text {
+    font-size: 0.875rem;
+    width: 18.625rem;
+    height: 3.875rem;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 60%;
+    left: -10%; }
+
+.main {
+  height: 100%; }
+
+.shoe-absolute {
+  position: absolute;
+  top: -10%;
+  left: 20%; }
+
+.force {
+  height: 100%; }
+  .force .article {
+    padding-top: 6.25rem;
+    position: relative; }
+    .force .article__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8125rem;
+      color: #000;
+      display: inline-block;
+      position: absolute;
+      top: 43%;
+      right: 5%; }
+    .force .article__text {
+      display: inline-block;
+      width: 41.17%;
+      font-size: 0.9375rem;
+      line-height: 1.875;
+      position: absolute;
+      top: 51%;
+      right: 5.5%; }
+    .force .article__img {
+      border: 5px solid #fff;
+      -webkit-box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.75); }
+    .force .article__btn {
+      position: absolute;
+      top: 61%;
+      right: 0;
+      font-size: 0.9375rem;
+      color: #000;
+      width: 9.0625rem;
+      height: 2.8125rem;
+      font-weight: 600;
+      font-family: inherit; }
+      .force .article__btn:after {
+        content: '';
+        background-color: initial;
+        border: 1px solid #82f4d3;
+        position: absolute;
+        width: 9.0625rem;
+        height: 2.8125rem;
+        z-index: 5;
+        left: -5%;
+        top: -23%; }
+  .force .arrivals {
+    padding-top: 5rem; }
+    .force .arrivals__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8125rem;
+      color: #000;
+      display: inline-block;
+      margin-bottom: 3.75rem; }
+    .force .arrivals__list {
+      width: 100%; }
+      .force .arrivals__list ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .force .arrivals__list ul .img-container {
+          width: auto;
+          height: auto;
+          margin-bottom: 3.875rem;
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          z-index: 16;
+          opacity: 1; }
+          .force .arrivals__list ul .img-container a {
+            position: absolute;
+            border: 2px solid #fff;
+            padding: 1.0625rem 1.8125rem;
+            color: #fff;
+            display: none;
+            z-index: 25; }
+          .force .arrivals__list ul .img-container .img-wrapper {
+            background-color: #90f3d7;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0; }
+          .force .arrivals__list ul .img-container:hover .img-wrapper {
+            opacity: 0.8;
+            display: block;
+            z-index: 20; }
+          .force .arrivals__list ul .img-container:hover a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+        .force .arrivals__list ul img {
+          display: block; }
+    .force .arrivals__list__name {
+      color: #000;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      font-family: inherit;
+      display: inline-block;
+      margin-right: 1.375rem;
+      margin-bottom: 1.375rem; }
+    .force .arrivals__list__price {
+      font-family: 'Roboto';
+      font-size: 1.5625rem;
+      color: #999999; }
+  .force .collections {
+    padding-top: 8.125rem;
+    position: relative; }
+    .force .collections .img-container {
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      right: 0; }
+    .force .collections__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8125rem;
+      color: #000;
+      display: inline-block;
+      display: block;
+      margin-bottom: 2.625rem; }
+    .force .collections__text {
+      display: inline-block;
+      width: 41.17%;
+      font-size: 0.9375rem;
+      line-height: 1.875;
+      margin-bottom: 3.625rem; }
+    .force .collections__btn {
+      width: 9.0625rem;
+      height: 2.8125rem;
+      font-weight: 600;
+      position: relative;
+      margin-left: 6px; }
+      .force .collections__btn:after {
+        content: '';
+        background-color: initial;
+        border: 1px solid #82f4d3;
+        position: absolute;
+        width: 9.0625rem;
+        height: 2.8125rem;
+        top: -10px;
+        left: -10px; }
+    .force .collections__img {
+      max-width: 100%;
+      border: 5px solid #fff;
+      -webkit-box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.75); }
+
+/*# sourceMappingURL=style.css.map */
